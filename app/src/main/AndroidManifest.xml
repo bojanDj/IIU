@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.iot">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".About" />
+        <activity
+            android:name=".Pop"
+            android:theme="@style/AppTheme.popup" />
+        <activity android:name=".QRScanner" />
+        <activity android:name=".ProveraZaposlenihActivity" />
+        <activity android:name=".Opcije" />
+        <activity android:name=".IstorijaActivity" />
+        <activity android:name=".NewEmp" />
+        <activity android:name=".MainActivityEmp" />
+        <activity android:name=".MainActivityAdmin" />
+        <activity android:name=".LoginActivity"/>
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

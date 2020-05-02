@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+
+    android:background="@color/colorSec"
+    tools:context=".Opcije">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimaryDark"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView2"
+        android:layout_width="300dp"
+        android:layout_height="138dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher_round" />
+    <TextView
+        android:id="@+id/txtUsername"
+        android:text="Korisnicko ime: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/roundedtext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/txtName"
+        android:text="Ime: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/roundedtext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/txtLastname"
+        android:text="Prezime: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/roundedtext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+<!--    <EditText-->
+<!--        android:id="@+id/txtFont"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="56dp"-->
+<!--        android:layout_marginStart="10dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:background="@drawable/roundedtext"-->
+<!--        android:hint="Unesite zeljenu velicinu fonta..."-->
+<!--        android:ems="10"-->
+<!--        android:inputType="textPersonName"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/imageView2" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btnIzmeni"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="56dp"-->
+<!--        android:layout_marginStart="10dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:text="Izmeni font"-->
+<!--        android:background="@drawable/rounded"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/txtPom" />-->
+
+</LinearLayout>
